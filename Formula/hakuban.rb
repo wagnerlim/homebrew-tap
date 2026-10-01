@@ -5,21 +5,21 @@
 class Hakuban < Formula
   desc "A terminal whiteboard where moving a card runs the automation you declared."
   homepage "https://wagnerlim.github.io/hakuban/"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wagnerlim/hakuban/releases/download/v0.1.0/hakuban_0.1.0_darwin_amd64.tar.gz"
-      sha256 "d829aaec7eb25e66281f086c787626eb53e0fb8414fcebad102351fb66f610c1"
+      url "https://github.com/wagnerlim/hakuban/releases/download/v0.1.1/hakuban_0.1.1_darwin_amd64.tar.gz"
+      sha256 "3c2971558904a74ff4073dfdc08e0163c907a4dd96d23d0959f620924fade959"
 
       define_method(:install) do
         bin.install "hakuban"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wagnerlim/hakuban/releases/download/v0.1.0/hakuban_0.1.0_darwin_arm64.tar.gz"
-      sha256 "a45c644bbc48532680d0099a5f42c5ea2ade91651f83fa42515f8940b75a4a41"
+      url "https://github.com/wagnerlim/hakuban/releases/download/v0.1.1/hakuban_0.1.1_darwin_arm64.tar.gz"
+      sha256 "907524d26fab6e893b5ee0ed99ab401dcb595d011db3926758d8a2659e72024c"
 
       define_method(:install) do
         bin.install "hakuban"
@@ -29,15 +29,15 @@ class Hakuban < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wagnerlim/hakuban/releases/download/v0.1.0/hakuban_0.1.0_linux_amd64.tar.gz"
-      sha256 "d200363512fe6a559da15beebddedd9eb89b43adcae805c2f6ec8c81c124207a"
+      url "https://github.com/wagnerlim/hakuban/releases/download/v0.1.1/hakuban_0.1.1_linux_amd64.tar.gz"
+      sha256 "a94d52f7834a5c01f4fe2f73628056e41a6d13dff29d2c98b8bfde60f5bf731a"
       define_method(:install) do
         bin.install "hakuban"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wagnerlim/hakuban/releases/download/v0.1.0/hakuban_0.1.0_linux_arm64.tar.gz"
-      sha256 "20172ceb0447a87729a3baaa571cd2a277a1cb4a28b7acf7d063d0fbfc611622"
+      url "https://github.com/wagnerlim/hakuban/releases/download/v0.1.1/hakuban_0.1.1_linux_arm64.tar.gz"
+      sha256 "27d4ec807681e6d2404cb73f669d223bf36d0ebbc4cc2499345bc025b409c98f"
       define_method(:install) do
         bin.install "hakuban"
       end
